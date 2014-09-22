@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)http://tcloud.sjtu.edu.cn/course/se106/2014/assignments/homework1/index.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Homework 1 - Warm Up - SE106 - Computer Programming II (2014)</title>
+<script src="./Homework 1 - Warm Up - SE106 - Computer Programming II (2014)_files/main.js"></script>
+<link rel="stylesheet" href="http://tcloud.sjtu.edu.cn/course/se106/2014/css/main.css">
+</head>
+<body>
+<header>
+<h1><a href="http://tcloud.sjtu.edu.cn/course/se106/2014/index.php">SE106</a></h1>
+<nav>
+<h2 id="assignments"><a href="http://tcloud.sjtu.edu.cn/course/se106/2014/assignments/" onclick="return false;">Assignments</a></h2>
+<h2><a href="http://tcloud.sjtu.edu.cn/course/se106/2014/schedule.php">Schedule</a></h2>
+<h2><a href="http://tcloud.sjtu.edu.cn/course/se106/2014/info.php">Info</a></h2>
+<h2><a href="http://tcloud.sjtu.edu.cn/course/se106/2014/qa/" target="_blank">Q&amp;A</a></h2>
+<h2><a href="http://tcloud.sjtu.edu.cn/course/se106/2014/grade/" target="_blank">Grade</a></h2>
+</nav>
+</header>
+<ul id="assignments_list">
+<li class="active"><a href="http://tcloud.sjtu.edu.cn/course/se106/2014/assignments/lab1/index.php"><span class="name">Lab1</span><span class="due">due on <time datetime="2014-10-11T23:59:59+08:00">10.11</time></span></a></li>
+<li class="active"><a href="http://tcloud.sjtu.edu.cn/course/se106/2014/assignments/homework2/index.php"><span class="name">Homework 2</span><span class="due">due on <time datetime="2014-09-23T23:59:59+08:00">09.23</time></span></a></li>
+<li><a href="./Homework 1 - Warm Up - SE106 - Computer Programming II (2014)_files/Homework 1 - Warm Up - SE106 - Computer Programming II (2014).htm"><span class="name">Homework 1</span><span class="due">due on <time datetime="2014-09-21T23:59:59+08:00">09.21</time></span></a></li>
+</ul>
+
+<div id="main">
+<h3>Homework 1: Warm Up</h3>
+<span class="assignment_due">due on <time class="due_time" datetime="2014-09-21T23:59:59+08:00">2014-09-21 23:59 UTC+8</time></span>
+<a class="assignment_ref" href="http://tcloud.sjtu.edu.cn/course/se106/2014/assignments/homework1/homework1.zip">Download Starter Files</a>
+<br>
+<div class="in">
+<h4>Introduction</h4>
+<div class="in">
+<p>For all labs and homework, we will use Stanford C++ Libraries. You can get online and offline documentation from our site.</p>
+<p>If you have any questions about this course or homework, feel free to post them on our <a href="http://tcloud.sjtu.edu.cn/course/se106/2014/qa/">Q&amp;A forum</a>. You are also encouraged to share your knowledge and help others in the Q&amp;A forum. And your can check your assignment grade on our <a href="http://tcloud.sjtu.edu.cn/course/se106/2014/grade/">Grade System</a></p>
+<p>In homework1, you will implement three methods using the API provided by the library. With the help of the library, you only need to write a few lines to complete the following tasks.</p>
+<p>Note: You only need to modify <code>TryTokenScanner.h</code> and <code>TryTokenScanner.cpp</code>.</p>
+</div>
+<h4>Part I: allTokens</h4>
+<div class="in">
+<p><code class="codep">Vector&lt;string&gt; TryTokenScanner::allTokens(string text);</code></p>
+<p>Implement allTokens method. This method should accepts a string and return its token list. You can get tokens by calling <code>TokenScanner::nextToken()</code> repeatedly until it reaches the end of the string.</p>
+<p>For example, input <code>"Hello world!"</code>; It should return <code>{"Hello", " ", "world", "!"}</code>.</p>
+</div>
+<h4>Part II: noWhiteSpaces</h4>
+<div class="in">
+<p><code class="codep">Vector&lt;string&gt; TryTokenScanner::noWhitespaces(string text);</code></p>
+<p>Implement TryTokenScanner method. This method should accepts a string and return its token list. This time, whitespaces are not taken as tokens and thus should be ignored. You may remove whitespace tokens from the token list returned by <code>allTokens()</code> you implemented, or find an API from <code>TokenScanner</code> to let the scanner ignore whitespaces during its parsing. Be care that whitespaces include space, tab and newline if you choose to remove whitespaces from the token list by yourself.</p>
+<p>For example, input <code>"Hello !\nWorld!"</code>; It should return <code>{"Hello", "!", "World", "!"}</code>.</p>
+</div>
+<h4>Part III: noComments</h4>
+<div class="in">
+<p><code class="codep">Vector&lt;string&gt; TryTokenScanner::noComments(string text);</code></p>
+<p>This method should accepts a string and return its token list. C style comments (and the content commented out) are not taken as tokens and thus should be ignored. You should use an API from TokenScanner to let the scanner ignore comments during its parsing.</p>
+<p>For example, input <code>"Hello/* World */!"</code>, it should return <code>{"Hello", "!"}</code>.</p>
+</div>
+<h4>Score</h4>
+<div class="in">
+<p>Final score according to ./Warmup<br>full score is 3, delay commit will lose score.</p>
+</div>
+<h4>Hand in</h4>
+<div class="in">
+<p>You only need to turn in your <code>TryTokenScanner.cpp</code> and <code>Tokenscanner.h</code> file in a package. Do NOT turn in other files or folders. For this assignment, you should turn in via:</p>
+<p><code class="codep">ftp://public.sjtu.edu.cn/upload/homework1/<br>Username: azard5, Password: public<br>example filename: 5130379001_homework1.zip</code></p>
+<p>You should always submit <code>TryTokenScanner.h</code>, even if you didn't modify it.</p>
+<p>If you have any question or problem about this assignment or your grade, contact with <a href="mailto:azardf4yy@gmail.com">azardf4yy@gmail.com</a></p>
+</div>
+<time class="assigned_time" datetime="2014-09-21T23:59:59+08:00">2014-09-21</time>
+</div>
+</div>
+
+
+
+</body></html>
