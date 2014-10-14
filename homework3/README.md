@@ -1,0 +1,24 @@
+
+<h3 style="padding: 0px; margin: 24px 0px 8px; font-size: 24px; line-height: 24px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(170, 170, 170); font-family: 'Heiti SC', ºÚÌå-¼ò, 'MS Yahei', Î¢ÈíÑÅºÚ, STXihei, »ªÎÄÏ¸ºÚ, 'WenQuanYi ZenHei', ÎÄÈªæäÕýºÚÌå, Sans-sarif; background-color: rgb(241, 242, 243);">Homework 3: Maze</h3>
+<span class="assignment_due" style="margin: -32px 0px 0px; line-height: 24px; font-size: 16px; float: right; font-family: 'Heiti SC', ºÚÌå-¼ò, 'MS Yahei', Î¢ÈíÑÅºÚ, STXihei, »ªÎÄÏ¸ºÚ, 'WenQuanYi ZenHei', ÎÄÈªæäÕýºÚÌå, Sans-sarif; background-color: rgb(241, 242, 243);">due on&nbsp;<time class="due_time" datetime="2014-10-8T23:59:59+08:00" style="font-weight: bold;">2014-10-8 23:59 UTC+8</time></span><a class="assignment_ref" href="http://tcloud.sjtu.edu.cn/course/se106/2014/assignments/homework3/homework3.zip" style="color: rgb(0, 0, 0); font-weight: bold; text-decoration: none; outline-style: none; display: block; float: right; padding: 8px 16px; line-height: 20px; font-size: 18px; margin: 8px; font-family: 'Heiti SC', ºÚÌå-¼ò, 'MS Yahei', Î¢ÈíÑÅºÚ, STXihei, »ªÎÄÏ¸ºÚ, 'WenQuanYi ZenHei', ÎÄÈªæäÕýºÚÌå, Sans-sarif; background: rgb(204, 204, 204);">Download Starter Files</a><br style="font-family: 'Heiti SC', ºÚÌå-¼ò, 'MS Yahei', Î¢ÈíÑÅºÚ, STXihei, »ªÎÄÏ¸ºÚ, 'WenQuanYi ZenHei', ÎÄÈªæäÕýºÚÌå, Sans-sarif; font-size: 16px; line-height: normal; background-color: rgb(241, 242, 243);">
+<div class="in" style="margin: 0px 0px 0px 16px; font-family: 'Heiti SC', ºÚÌå-¼ò, 'MS Yahei', Î¢ÈíÑÅºÚ, STXihei, »ªÎÄÏ¸ºÚ, 'WenQuanYi ZenHei', ÎÄÈªæäÕýºÚÌå, Sans-sarif; font-size: 16px; line-height: normal; background-color: rgb(241, 242, 243);">
+<h4 style="padding: 0px; margin: 6px 0px; font-size: 20px; line-height: 20px;">Introduction</h4>
+<div class="in" style="margin: 0px 0px 0px 16px;">In homework 3, you need use&nbsp;<strong>recursive</strong>&nbsp;find a path to get out a maze.</div>
+<h4 style="padding: 0px; margin: 6px 0px; font-size: 20px; line-height: 20px;">Format</h4>
+<div class="in" style="margin: 0px 0px 0px 16px;">As you can see from download files,&nbsp;<strong>Maze.cpp</strong>&nbsp;is empty except comments, you need write all code by yourself. However, you must follow our I/O format.&nbsp;<br>In file testmap_1.txt:<br><code class="codep" style="border: 1px dashed rgb(170, 170, 170); display: block; margin: 8px 32px;">4 6<br>+--+<br>|S |<br>+- |<br>|- |<br>E &nbsp;|<br>+--+<br></code>The first line is two number, tell you the length and width of the maze, this maze is a 4*6 size maze.<br>And 'S' is your start point, 'E' is the end, '|' '-' '+' are walls, the work you need to do is to find a path to the end, and output the path to terminal. For this maze, you should output:<br><code class="codep" style="border: 1px dashed rgb(170, 170, 170); display: block; margin: 8px 32px;">testmap_1: (2,1) (2,2) (2,3) (2,4) (1,4) (0,4)</code>testmap_1 is maze name, (2,1) means move to x=2, y=1 in this maze.&nbsp;<br>There are three test maze, and we won't test other maze.&nbsp;<br>You can enter<code class="codep" style="border: 1px dashed rgb(170, 170, 170); display: block; margin: 8px 32px;">make</code>to generate a execute file, and when you run it, it can output to terminal:<code class="codep" style="border: 1px dashed rgb(170, 170, 170); display: block; margin: 8px 32px;">testmap_1: ...<br>testmap_2: ...<br>testmap_3: ...</code>If you want to add other .cpp or .h file, don't forget to modify&nbsp;<strong>Makefile</strong>
+<h4 style="padding: 0px; margin: 6px 0px; font-size: 20px; line-height: 20px;">Socre</h4>
+<div class="in" style="margin: 0px 0px 0px 16px;">
+<p style="margin: 8px 0px;">You will get full credit if you output correct path and use recursive</p>
+<p style="margin: 8px 0px;">Late committing will be punished</p>
+</div>
+<h4 style="padding: 0px; margin: 6px 0px; font-size: 20px; line-height: 20px;">Hand in</h4>
+<div class="in" style="margin: 0px 0px 0px 16px;">
+<p style="margin: 8px 0px;">Enter:</p>
+<code class="codep" style="border: 1px dashed rgb(170, 170, 170); display: block; margin: 8px 32px;">make handin</code>And modify generated .zip file's name to your own student number
+<p style="margin: 8px 0px;">Submit your to</p>
+<p style="margin: 8px 0px;"><code class="codep" style="border: 1px dashed rgb(170, 170, 170); display: block; margin: 8px 32px;">ftp://public.sjtu.edu.cn/upload/homework3/<br>Username: azard5, Password: public<br>Filename: 5130379001_homework3.zip</code></p>
+<p style="margin: 8px 0px;">If you have any question or find some bugs, please contact&nbsp;<a href="mailto:azardf4yy@gmail.com" style="color: rgb(34, 102, 187); font-weight: bold; text-decoration: none; outline-style: none;">azardf4yy@gmail.com</a></p>
+</div>
+<time class="assigned_time" datetime="2014-09-23T23:59:59+08:00" style="text-align: right; display: block;">2014-09-23</time></div>
+</div>
+
