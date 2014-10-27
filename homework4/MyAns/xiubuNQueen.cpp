@@ -96,7 +96,7 @@ int main()
 			lie=temp;
 		}
 		myque=new int[hang];
-		solve_mn(hang,lie,myque);
+		solve_mn(hang,hang,myque);
 		print_ans(hang,lie,myque);
 		delete [] myque;
 	}
