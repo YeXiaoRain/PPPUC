@@ -108,7 +108,7 @@ int KQueens(Chessboard *c)
 	int i,j,k=minn(hang,lie);
 	int * ans;
 	ans=new int[k];
-	if(!solve_mn(k,maxx(hang,lie),ans))
+	if(!solve_mn(k,k,ans))
 		k=-1;
 	else{
 		if(hang<=lie){
