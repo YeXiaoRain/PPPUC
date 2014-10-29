@@ -106,7 +106,7 @@ int city_nokia::newL(int left,int iblock){/*{{{*/
 
 bool city_nokia::valid_add(int cover,int oriblock){/*{{{*/
 	switch(oriblock){
-		case 1:			
+		case 1:	
 			if(cover==3 || cover==5)
 				return false;
 			break;
@@ -114,7 +114,7 @@ bool city_nokia::valid_add(int cover,int oriblock){/*{{{*/
 			if(cover==1 || cover==4 || cover==5)
 				return false;
 			break;
-		case 3:		
+		case 3:	
 			if(cover==1 || cover==3 || cover==4 || cover==5)
 				return false;
 			break;
@@ -213,8 +213,7 @@ void city_nokia::add_line(bool last){/*{{{*/
 						continue;
 					//right down corner
 					if(last && i==cols-1 && !this->valid_add(addblock,style))
-							continue;
-					
+						continue;
 					newzuo=this->newL(zuo,addblock);
 					this->put_newstate(i,j,(newzuo-zuo)*7+(addblock-shang),temp+style);
 				}
@@ -257,8 +256,6 @@ double city_nokia::dertime(){/*{{{*/
 
 void city_nokia::print_ans(){/*{{{*/
 	int i,j;
-	cout<<"max_popu:"<<max_popu;
-	cout<<" ave:"<<(1.0*max_popu)/(rows*cols)<<endl;
 	if(rotate){
 		cout<<cols<<" "<<rows<<endl;
 		for(j=0;j<cols;j++){
@@ -274,6 +271,9 @@ void city_nokia::print_ans(){/*{{{*/
 			cout<<endl;
 		}
 	}
+	cout<<"max_popu:"<<max_popu;
+	cout<<" ave:"<<(1.0*max_popu)/(rows*cols)<<endl;
+	cout<<endl;
 	return ;
 }/*}}}*/
 
@@ -338,8 +338,8 @@ city_nokia::~city_nokia(){/*{{{*/
 	delete [] building;
 	delete [] maxbuilding;*/
 }/*}}}*/
-
-int main(int argc, char** argv)/*{{{*/
+/*
+int main(int argc, char** argv)//{{{
 {
 	if(argc!=3){
 		cout<<"usage:./thispro input output"<<endl;
@@ -365,13 +365,13 @@ int main(int argc, char** argv)/*{{{*/
 	infile.close();
 	outfile.close();
 	return 0;
-}/*}}}*/
-/*
+}//}}}
+*/
 int main() //{{{
 {
 	int i,j;
 	city_nokia * test_city;
-	//for(i=1;i<=10;i++)
+	//for(i=1;i<=8;i++)
 	//	for(j=i;j<=11;j++){
 	while(cin>>i>>j){
 		test_city = new city_nokia(i,j);
@@ -380,4 +380,3 @@ int main() //{{{
 	};
 	return 0;
 } //}}}
-*/

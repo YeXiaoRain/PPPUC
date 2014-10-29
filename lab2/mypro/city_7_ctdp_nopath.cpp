@@ -307,7 +307,7 @@ int main() //{{{
 {
 	int i,j;
 	city_nokia * test_city;
-	//for(i=1;i<=10;i++)
+	//for(i=1;i<=8;i++)
 	//	for(j=i;j<=11;j++){
 	while(cin>>i>>j){
 		test_city = new city_nokia(i,j);
