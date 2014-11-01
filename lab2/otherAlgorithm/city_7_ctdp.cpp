@@ -338,7 +338,7 @@ city_nokia::~city_nokia(){/*{{{*/
 	delete [] building;
 	delete [] maxbuilding;*/
 }/*}}}*/
-/*
+
 int main(int argc, char** argv)//{{{
 {
 	if(argc!=3){
@@ -366,7 +366,7 @@ int main(int argc, char** argv)//{{{
 	outfile.close();
 	return 0;
 }//}}}
-*/
+/*
 int main() //{{{
 {
 	int i,j;
@@ -380,3 +380,4 @@ int main() //{{{
 	};
 	return 0;
 } //}}}
+*/

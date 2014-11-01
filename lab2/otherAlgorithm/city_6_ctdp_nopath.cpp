@@ -257,8 +257,8 @@ void city_nokia::print_ans(){/*{{{*/
 			cout<<endl;
 		}
 	}
-	cout<<"max_popu:"<<max_popu;
-	cout<<" ave:"<<(1.0*max_popu)/(rows*cols)<<endl;
+	
+	cout<<"max_popu:"<<max_popu<<" ave:"<<(1.0*max_popu)/(rows*cols)<<endl;
 	cout<<endl;
 	return ;
 }/*}}}*/
@@ -366,3 +366,4 @@ int main() //{{{
 	};
 	return 0;
 } //}}}
+
