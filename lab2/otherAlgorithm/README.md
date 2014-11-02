@@ -8,8 +8,7 @@ city_7_ctdp.cpp
 
 Compressed state:
 
-> 
-<br>0 represents 1
+> 0 represents 1
 <br>1 represents 2 not link 1 
 <br>2 represents 2 link 1
 <br>3 represents 3 link 1 but not link 2
@@ -46,8 +45,7 @@ city_6_ctdp_nopath.cpp
 
 Recently I found another way to save the state
 
-> 
-<br>0 represents 1
+> 0 represents 1
 <br>1 represents 2 who's back isn't 1 
 <br>2 represents 2 who's back is 1
 <br>3 represents 3 who's back is 1
@@ -72,8 +70,7 @@ I haven't write any pruning code in these code but I think it will have some way
 
 
 
-> 
-<br>Time=k*max{m,n}+b (k is proportional to (6^min{m,n}*min{m,n}))
+> Time=k*max{m,n}+b (k is proportional to (6^min{m,n}*min{m,n}))
 <br>Time(min{m,n}=7)=0.07*max{m,n}-0.15 (s)
 <br>Time(min{m,n}=8)=0.5*max{m,n}-1.5 (s)
 <br>Time(min{m,n}=9)=3*max{m,n}-8 (s)
