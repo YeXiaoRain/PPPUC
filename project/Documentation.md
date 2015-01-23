@@ -73,6 +73,7 @@
 -
 
 Ubuntu 14.04LTS ext3格式磁盘中随机数据测试
+
 ![数据效率](http://s8.sinaimg.cn/middle/002ie0p7zy6Pds5WP5ld7&690)
 
 横坐标为对数据求`log`的值
