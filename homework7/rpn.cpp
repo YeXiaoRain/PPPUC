@@ -8,7 +8,7 @@ stack <char> op_stack;
 int Priority[255]={0};
 void do_code(char op){
 //	cout<<"op:"<<op<<" top:"<<(op_stack.empty() ? 'k' : op_stack.top())<<endl;
-	if(op_stack.empty() || op=='('|| op_stack.top()=='(' ){
+	if(op_stack.empty() || op=='('|| (op!=')' && op_stack.top()=='(') ){
 		op_stack.push(op);
 	}else if(op==')'){
 		while(!op_stack.empty() && op_stack.top()!='('){
